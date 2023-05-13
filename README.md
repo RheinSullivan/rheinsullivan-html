@@ -1,4 +1,4 @@
-### Hi there 👋
+### Kon'nichiwa minasan, watashi no purofīru o goran itadaki arigatōgozaimasu 👋
 
 <!--
 **RheinSullivan/RheinSullivan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
