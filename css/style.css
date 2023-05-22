@@ -108,7 +108,7 @@ section{
     width: 100%;
     justify-content: space-between;
     padding: 4rem 10% 4rem;
-    margin-top: -7rem;
+    margin-top: -5rem;
 }
 .home-content{
     margin-top: auto;
@@ -207,7 +207,7 @@ span{
 }
 .home-img img{
     width: 40rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: -7rem;
     margin-right: -2rem;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
