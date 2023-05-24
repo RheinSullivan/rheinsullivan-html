@@ -704,6 +704,7 @@ span{
     overflow: hidden;
     left: 3rem;
     border-radius: 2rem;
+    margin-bottom: -2rem;
 }
 .contact .imgBx:before{
     content: '';
