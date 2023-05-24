@@ -616,7 +616,6 @@ span{
 .contact .fromBx form .inputbox:last-child{
     margin-bottom: 0rem;
 }
-.contact .fromBx form .inputbox input,
 .contact .fromBx form .inputbox a,
 .contact .fromBx form .inputbox textarea{
     position: relative;
