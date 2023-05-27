@@ -554,11 +554,11 @@ span{
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 1000;
-    color: var(--text-color);
+    color: var(--second-text);
 }
 .service-card p{
     text-align: center;
-    color: var(--text-color);
+    color: var(--second-text);
     font-size: 1.5rem;
 }
 .service-card:hover{
@@ -909,12 +909,14 @@ footer[data-v-6661]::before{
     }
 }
 /* Responsive */
+@media(max-width: 1201px){}
 @media(max-width: 1200px){
     html{
         font-size: 55%;
     }
 }
-@media(max-width: 991px){
+@media(max-width: 1025px){}
+@media(max-width: 1024px){
     .header{
         padding: 2rem 3%;
     }
@@ -974,7 +976,7 @@ footer[data-v-6661]::before{
         display: none;
     }
 }
-@media(max-width: 768px){
+@media(max-width: 769px){
     #menu-icon{
         display: block;
     }
@@ -1065,7 +1067,7 @@ footer[data-v-6661]::before{
         margin: 0 -10rem;
     }
 }
-@media(max-width: 617px){
+@media(max-width: 768px){
     .project-container{
         grid-template-columns: 1fr;
     }
@@ -1083,22 +1085,65 @@ footer[data-v-6661]::before{
         margin: 0;
     }
 }
-@media(max-width: 450px){
+@media(max-width: 481px){}
+@media(max-width: 480px){
     html{
-        font-size: 50%;
+        font-size: 48%;
     }
-    .contact fromBx .inputbox input{
+    .header {
+        padding: 0.3rem 3%;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 43rem;
         width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+    }
+    .navbar.active{
+        display: block;
+        margin: auto -2rem;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0; 
+        animation: slideLeft .2s ease forwards;
+        animation-delay: calc(.2s * var(--rs));
+    }
+    .navbar a.bttn{
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0;
+        border: 1px solid transparent;
+        border-radius: 3rem;
+        padding: 1rem 2rem;
     }
     .bttn{
         margin-left: 0;
     }
     .home-content{
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
-    .skill-head{
-        min-width: 300px;
-        margin: auto;
+    .home-content h6{
+        font-size: 1.8rem;
+    }
+    .home-img img{
+        width: 90vw;
+        margin-right: -1.6rem;
+    }
+    .btn:nth-of-type(1){
+        padding: 1rem 2.5rem;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+    }
+    .btn:nth-of-type(2){
+        padding: 1rem 2.5rem;
+        border-radius: 3rem;
+        font-size: 1.5rem;
     }
     .about{
         flex-direction: column-reverse;
@@ -1118,11 +1163,87 @@ footer[data-v-6661]::before{
         animation-delay: .1s;
         opacity: 0;
     }
+    .about-img img{
+        width: 90vw;
+        margin-right: -1.6rem;
+    }
+    .container{
+        width: 100%;
+        margin: 5rem auto;
+    }
+    .skill-head{
+        min-width: 300px;
+        margin: auto;
+    }
+    .skills h2{
+        font-size: 3rem;
+    }
+    .skills{
+        padding: 2.5rem;
+        margin: -3.5rem auto;
+    }
+    .skill-main{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .skill-bar .skill-info p{
+        font-size: 1.4rem;
+    }
+    .project h2 {
+        font-size: 4.3rem;
+    }
+    .project p{
+        font-size: 1.6rem;
+    }
+    .project-layer p{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .services h1{
+        font-size: 4.3rem;
+    }
+    .services p{
+        font-size: 1.6rem;
+        padding: 0 8rem;
+    }
+    .service-card p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 0 3rem;
+    }
+    .contact fromBx .inputbox input{
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    footer[data-v-6661]{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    footer[data-v-6661]::before{
+        text-align: center;
+        padding: 5rem 0;
+        margin: 0 -9rem;
+    }
+    .IconTop{
+        margin: -2rem 5rem 2rem;
+        text-align: center;
+    }
+}
+@media(max-width: 320px){
+    html{
+        font-size: 45%;
+    }
+    .header {
+        padding: 0.3rem 3%;
+    }
     .navbar{
         display: none;
         position: absolute;
         top: 100%;
-        left: 43rem;
+        left: 47rem;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -1130,7 +1251,7 @@ footer[data-v-6661]::before{
     }
     .navbar.active{
         display: block;
-        margin: auto -5rem;
+        margin: auto -16rem;
     }
     .navbar a{
         display: block;
@@ -1147,42 +1268,35 @@ footer[data-v-6661]::before{
         border-radius: 3rem;
         padding: 1rem 2rem;
     }
-}
-@media(max-width: 375px){
-    .home-img img{
-        width: 80vw;
-        margin-right: 3rem;
-    }
-    .home-content{
-        margin-left: 10rem;
-    }
-    .about-img  img{
-        width: 80vw;
-    }
-    .footer{
-        flex-direction: column-reverse;
-    }
-    .footer[data-v-6661]{
-        text-align: center;
-        margin-top: 2rem;
-    }
     .bttn{
         margin-left: 0;
     }
-    .navbar{
-        left: 47rem;
+    .home-content{
+        margin-left: 12rem;
     }
-    .skills{
-        padding: 2.5rem;
-        margin: -3.5rem auto;
+    .home-content h6{
+        font-size: 1.5rem;
     }
-    .skills h2{
-        font-size: 2.5em;
-        font-weight: 600;
+    .home-img img{
+        width: 80vw;
+        margin-right: -1.5rem;
+    }
+    .btn:nth-of-type(1){
+        padding: 0.9rem 2rem;
+        border-radius: 3rem;
+        font-size: 1.3rem;
+    }
+    .btn:nth-of-type(2){
+        padding: 0.9rem 2rem;
+        border-radius: 3rem;
+        font-size: 1.3rem;
     }
     .about{
         flex-direction: column-reverse;
         padding: 1rem 10%;
+    }
+    .about-content{
+        margin-left: -2rem;
     }
     .about-content h2, 
     .about-content p{
@@ -1195,52 +1309,77 @@ footer[data-v-6661]::before{
         animation-delay: .1s;
         opacity: 0;
     }
-    .navbar{
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 43rem;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
+    .about-img img{
+        width: 80vw;
+        margin-right: -1.5rem;
     }
-    .navbar.active{
-        display: block;
-        margin: auto -10rem;
-    }
-    .navbar a{
-        display: block;
-        font-size: 1.5rem;
-        margin: 3rem 0; 
-        animation: slideLeft .2s ease forwards;
-        animation-delay: calc(.2s * var(--rs));
-    }
-    .navbar a.bttn{
-        display: block;
-        font-size: 1.5rem;
-        margin: 3rem 0;
-        border: 1px solid transparent;
-        border-radius: 3rem;
-        padding: 1rem 2rem;
+    .skills{
+        padding: 2.5rem;
+        margin: -3.5rem auto;
     }
     .container{
         width: 100%;
         margin: 5rem auto;
     }
+    .skills h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: auto 1rem 1rem;
+    }
+    .skill-head p{
+        font-size: 1.4rem;
+    }
     .skill-head{
         min-width: 300px;
-        margin: auto -3rem;
+        margin: -1rem -6.5rem;
     }
     .skill-main{
         flex-direction: column;
-        width: 100%
+        width: 100%;
+        margin: auto;
+    }
+    .skill-bar .skill-info p{
+        font-size: 1.3rem;
+    }
+    .skill-bar .bar{
+        width: 100%;
+        height: 1rem;
+    }
+    .project h2 {
+        font-size: 4rem;
+    }
+    .project p{
+        font-size: 1.3rem;
+    }
+    .project-layer p{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .services h1{
+        font-size: 4rem;
+    }
+    .services p{
+        font-size: 1.3rem;
+        padding: 0 3rem;
+    }
+    .service-card p{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .footer{
+        flex-direction: column-reverse;
     }
     footer[data-v-6661]{
-        align-items: center;
+        margin-top: 2rem;
+        font-size: 1.3rem;
     }
     footer[data-v-6661]::before{
+        text-align: center;
         padding: 5rem 0;
-        margin: 0 -9rem;
+        margin: 0 -8rem;
+    }
+    .IconTop{
+        margin: -2rem 5rem 2rem;
+        text-align: center;
     }
 }

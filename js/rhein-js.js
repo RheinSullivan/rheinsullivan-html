@@ -39,7 +39,7 @@ var typed = new Typed(".multiple-text",{
     loop: true
 })
 /* Swiper */
-var project = new Projects(".myProjects", {
+var project = new Project(".myProjects", {
     slidesPerView: 3,
     grid: {
       rows: 2,
