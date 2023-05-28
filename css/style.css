@@ -1064,7 +1064,8 @@ footer[data-v-6661]::before{
     }
     footer[data-v-6661]::before{
         padding: 5rem 0;
-        margin: 0 -10rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media(max-width: 768px){
@@ -1225,7 +1226,8 @@ footer[data-v-6661]::before{
     footer[data-v-6661]::before{
         text-align: center;
         padding: 5rem 0;
-        margin: 0 -9rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .IconTop{
         margin: -2rem 5rem 2rem;
@@ -1290,9 +1292,6 @@ footer[data-v-6661]::before{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.3rem;
-    }
-    .social-media a{
-        padding-left: 8rem;
     }
     .about{
         flex-direction: column-reverse;
@@ -1380,7 +1379,8 @@ footer[data-v-6661]::before{
     footer[data-v-6661]::before{
         text-align: center;
         padding: 5rem 0;
-        margin: 0 -8rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .IconTop{
         margin: -2rem 5rem 2rem;
@@ -1531,7 +1531,8 @@ footer[data-v-6661]::before{
     footer[data-v-6661]::before{
         text-align: center;
         padding: 5rem 0;
-        margin: 0 -8rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .IconTop{
         margin: -2rem 5rem 2rem;
