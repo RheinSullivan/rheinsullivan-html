@@ -112,6 +112,8 @@ section{
 }
 .home-content{
     margin-top: auto;
+    margin-left: 0.8rem;
+    margin-right: auto;
 }
 .home-content h6{
     font-size: 1.5rem;
@@ -1064,8 +1066,7 @@ footer[data-v-6661]::before{
     }
     footer[data-v-6661]::before{
         padding: 5rem 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 -10rem;
     }
 }
 @media(max-width: 768px){
@@ -1226,8 +1227,7 @@ footer[data-v-6661]::before{
     footer[data-v-6661]::before{
         text-align: center;
         padding: 5rem 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 -9rem;
     }
     .IconTop{
         margin: -2rem 5rem 2rem;
@@ -1379,8 +1379,7 @@ footer[data-v-6661]::before{
     footer[data-v-6661]::before{
         text-align: center;
         padding: 5rem 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 -8rem;
     }
     .IconTop{
         margin: -2rem 5rem 2rem;
@@ -1531,8 +1530,7 @@ footer[data-v-6661]::before{
     footer[data-v-6661]::before{
         text-align: center;
         padding: 5rem 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 -8rem;
     }
     .IconTop{
         margin: -2rem 5rem 2rem;
