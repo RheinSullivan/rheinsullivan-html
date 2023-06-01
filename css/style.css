@@ -1265,6 +1265,171 @@ span{
         text-align: center;
     }
 }
+@media(max-width: 375px){
+    html{
+        font-size: 47%;
+    }
+    .header {
+        padding: 0.3rem 3%;
+    }
+    .header-icon{
+        width: 21rem;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0; 
+        animation: slideRight .1s ease forwards;
+        animation-delay: calc(.2s * var(--rs));
+    }
+    .navbar a.bttn{
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0;
+        border: 1px solid transparent;
+        border-radius: 3rem;
+        padding: 1rem 2rem;
+    }
+    .bttn{
+        margin-left: 0;
+    }
+    .home-content{
+        margin-left: auto;
+    }
+    .home-content h6{
+        font-size: 1.5rem;
+        margin-left: -2.8rem;
+    }
+    .home-content h3{
+        font-size: 1.8rem;
+        margin-left: -2.8rem;
+    }
+    .home-content h1{
+        margin-left: -2.8rem;
+    }
+    .home-content p{
+        margin-left: -2.8rem;
+    }
+    .home-img img{
+        width: 85vw;
+        margin-right: -1.5rem;
+    }
+    .btn:nth-of-type(1){
+        padding: 0.9rem 2rem;
+        border-radius: 3rem;
+        font-size: 1.3rem;
+        margin-left: -2.8rem;
+    }
+    .btn:nth-of-type(2){
+        padding: 0.9rem 2rem;
+        border-radius: 3rem;
+        font-size: 1.3rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+        padding: 1rem 10%;
+    }
+    .social-media{
+        margin-left: -3rem;
+    }
+    .about-content{
+        margin-left: -2.2rem;
+    }
+    .about-content h2, 
+    .about-content p{
+        animation: slideRight 1s ease forwards;
+        animation-delay: .1s;
+        opacity: 0;
+    }
+    .about-content h3{
+        animation: slideLeft 1s ease forwards;
+        animation-delay: .1s;
+        opacity: 0;
+    }
+    .about-img img{
+        width: 85vw;
+        margin-right: -1.5rem;
+    }
+    .skills{
+        padding: 2.5rem;
+        margin: -3.5rem auto;
+    }
+    .skill-header{
+        width: 100%;
+        text-align: center;
+    }
+    .skill-header h2{
+        font-size: 3rem;
+    }
+    .skill-header p{
+        font-size: 1.5rem;
+    }
+    .skills-content{
+        width: 100%;
+        margin: 5rem auto;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .skill-box p{
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
+    .skill-title h3{
+        font-size: 2rem;
+        margin: 1rem auto auto;
+    }
+    .skills-icon{
+        width: 6.5rem;
+    }
+    .project h2 {
+        font-size: 4rem;
+    }
+    .project p{
+        font-size: 1.3rem;
+    }
+    .project-layer p{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .services h1{
+        font-size: 4rem;
+    }
+    .services p{
+        font-size: 1.3rem;
+        padding: 0 5rem;
+    }
+    .service-card p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 0 2rem;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .copyright img{
+        width: 18rem;
+    }
+    .copyright h2{
+        font-size: 1.3rem;
+    }
+    .IconTop{
+        margin: 2rem 5rem 2rem;
+        text-align: center;
+    }
+}
 @media(max-width: 360px){
     html{
         font-size: 47%;
@@ -1336,6 +1501,9 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.3rem;
+    }
+    .social-media{
+        margin-left: -3rem;
     }
     .about{
         flex-direction: column-reverse;
@@ -1471,20 +1639,20 @@ span{
         margin-left: auto;
     }
     .home-content h6{
-        margin-left: -2rem;
+        margin-left: -2.5rem;
         font-size: 1.3rem;
     }
     .home-content h3{
-        margin-left: -2rem;
+        margin-left: -2.5rem;
         font-size: 1.7rem;
         font-weight: 400;
     }
     .home-content h1{
-        margin-left: -2rem;
+        margin-left: -2.5rem;
         font-size: 4.7rem;
     }
     .home-content p{
-        margin-left: -2rem;
+        margin-left: -2.5rem;
         font-size: 1.5rem;
     }
     .home-img img{
@@ -1496,7 +1664,7 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.2rem;
-        margin-left: -2rem;
+        margin-left: -2.5rem;
     }
     .btn:nth-of-type(2){
         padding: 0.9rem 2rem;
