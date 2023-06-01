@@ -110,11 +110,6 @@ section{
     padding: 4rem 10% 4rem;
     margin-top: -5rem;
 }
-.home-content{
-    margin-top: auto;
-    margin-left: 0.8rem;
-    margin-right: auto;
-}
 .home-content h6{
     font-size: 1.5rem;
     opacity: 0;
@@ -123,6 +118,7 @@ section{
     margin-bottom: 2.5rem;
     animation: slideLeft 1s ease forwards;
     animation-delay: .1s;
+    margin-left: 0.8rem;
 }
 .home-content h3{
     font-size: 2rem;
@@ -132,6 +128,7 @@ section{
     font-weight: 700;
     margin-top: 2.5rem;
     margin-bottom: -0.7rem;
+    margin-left: 0.8rem;
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 1rem;
@@ -141,7 +138,7 @@ section{
 .home-content h1{
     font-size: 5.6rem;
     line-height: 1;
-    margin: 0.5rem 0rem 2.8rem;
+    margin: 0.5rem 0rem 2.8rem 0.8rem;
     animation: slideRight 1s ease forwards;
     animation-delay: .1s;
     opacity: 0;
@@ -158,6 +155,7 @@ span{
     animation-delay: .1s;
     font-size: 1.6rem;
     margin-bottom: 3rem;
+    margin-left: 0.8rem;
 }
 .btn:nth-of-type(1){
     border: -0rem solid var(--main-color);
@@ -172,6 +170,7 @@ span{
     opacity: 0;
     margin-left: 0rem;
     margin-top: 0.5rem;
+    margin-left: 0.8rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
 }
@@ -226,7 +225,7 @@ span{
     text-decoration: none;
     justify-content: right;
     align-items: center;
-    margin: 8rem -2rem 9rem 0;
+    margin: 8rem -2rem 9rem 0.3rem;
     font-size: 2rem;
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
@@ -316,6 +315,30 @@ span{
     opacity: 0;
     border: -0px solid;
 }
+.bttn2:nth-of-type(1){
+    border: -0rem solid var(--main-color);
+    display: inline-block;
+    padding: 0.9rem 2.5rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    background: var(--main-color);
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.3s * var(--rs));
+    opacity: 0;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+.bttn2:hover:nth-of-type(1){
+    border: 0.1rem solid var(--text-color);
+    color: var(--main-color);
+    transition: .4s;
+    background: var(--text-color);
+    text-decoration: none;
+    box-shadow: 0 0 1rem var(--gray-color);
+}
 /* Skills Info */
 .skills{
     position: relative;
@@ -325,7 +348,25 @@ span{
     justify-content: center;
     margin: auto;
 }
-.container{
+.skill-header{
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+}
+.skill-header{
+    width: 100%;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.skill-header h2{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+.skill-header p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.skills-content{
     height: auto;
     backdrop-filter: blur(6rem);
     padding: 6rem;
@@ -334,85 +375,92 @@ span{
     margin-top: -3rem;
     width: 100rem;
 }
-.container .skill-head{
-    width: 100%;
-    margin-bottom: 8rem;
+.container{
+    align-items: center;
+    display: grid;
+    font-size: 1.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    margin-top: -4rem;
+    padding: 1rem 5rem;
     text-align: center;
 }
-.skill-head h2{
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+.skill-box{
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 1rem;
 }
-.skill-head p{
-    opacity: .8;
-    font-size: 1.5rem;
+.skill-box p{
     font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0 3rem;
+    text-align: center;
 }
-.skill-main{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 3.8rem;
-    grid-column-gap: 6rem;
+.skill-box:hover > .skill-title:after,
+.skill-box:hover > .skill-title:before{
+    width: 2.188rem;
 }
-.skill-bar .skill-info{
+.skill-box:hover .skills-img{
+    transform: translateY(-0.625rem);
+}
+.skill-title{
     align-items: center;
-    padding: 0 1rem;
     display: flex;
-    justify-content: space-between;
-}
-.skill-bar .skill-info p{
-    font-size: 1.5rem;
-    opacity: .8;
-    font-weight: 500;
-}
-.skill-bar .bar{
-    width: 100%;
-    height: 1rem;
-    background-color: var(--second-red-color);
-    border-radius: 2.5rem;
-    margin-top: 0.5rem;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
     position: relative;
-    box-shadow: 0 0 1rem var(--main-color);
 }
-.skill-bar .bar span{
-    width: 50%;
-    height: 100%;
+.skill-title:after{
+    background-color: var(--main-color);
+    bottom: 0;
+    border-radius: 0.125rem 0 0 0.125rem;
+    content: '';
+    height: 4px;
     position: absolute;
-    border-radius: 2.5rem;
-    background: linear-gradient(to right, var(--gray-color) 0%, var(--main-color) 100%);
+    right: 50%;
+    transition: .5s;
+    width: 0;
 }
-.skill-bar .bar .game{
-    width: 40%;
-    animation: game 3s;
+.skill-title:before{
+    background-color: var(--main-color);
+    bottom: 0;
+    border-radius: 0 0.125rem 0.125rem 0;
+    content: '';
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    transition: .5s;
+    width: 0;
 }
-.skill-bar .bar .mod{
-    width: 80%;
-    animation: mod 3s;
+.skill-title h3{
+    color: var(--text-color);
+    margin-top: 0.5rem;
 }
-.skill-bar .bar .guitarist{
+.skills-img{
+    align-items: center;
+    display: flex;
+    height: 5.625rem;
+    justify-content: center;
+    width: 5.625rem;
+    position: relative;
+}
+.skills-img:after{
+    content: '';
+    left: 0;
+    height: 5.625rem;
+    position: absolute;
+    top: 0;
+    transition: .5s;
     width: 50%;
-    animation: guitarist 3s;
 }
-.skill-bar .bar .design{
-    width: 80%;
-    animation: design 3s;
-}
-.skill-bar .bar .html{
-    width: 40%;
-    animation: html 3s;
-}
-.skill-bar .bar .css{
-    width: 50%;
-    animation: css 3s;
-}
-.skill-bar .bar .php{
-    width: 35%;
-    animation: php 3s;
-}
-.skill-bar .bar .javascript{
-    width: 35%;
-    animation: javascript 3s;
+.skills-icon{
+    width: 5.4rem;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: calc(.3s * var(--rs));
+    opacity: 0;
+    z-index: 2;
 }
 /* Project */
 .project{
@@ -706,7 +754,6 @@ span{
     overflow: hidden;
     left: 3rem;
     border-radius: 2rem;
-    margin-bottom: -2rem;
 }
 .contact .imgBx:before{
     content: '';
@@ -723,43 +770,21 @@ span{
     position: absolute;
     bottom: 0;
     max-height: 95%;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: calc(.3s * var(--rs));
+    opacity: 0;
 }
 /* Copyright */
-footer[data-v-6661]{
-    bottom: 0;
-    position: relative;
-    margin: 2% 50% auto 2%;
-    z-index: 101;
-    width: 100%;
-    height: 9rem;
-    color: var(--main-color);
-    font-weight: bold;
-    font-family: 'Labrada', serif;
+.copyright{
+    margin: 2rem auto;
     text-align: center;
-    font-size: 1.5rem;
+    color: var(--text-color)
 }
-::after, ::before{
-    -webkit-animation: none .5s 0s 1 normal none running;
-    animation: none .5s 0s 1 normal none running;
-    transition: none .5s cubic-bezier(.4,0,.2,1) 0s;
-    box-sizing: border-box;
-    margin: 0;
-    border-width: 0;
-    padding: 0;
-    color: inherit;
-    font: inherit;
-}
-footer[data-v-6661]::before{
-    background: url("https://blogger.googleusercontent.com/img/a/AVvXsEi4gceOslGO-VzzetAIh4LEZakxn5zqkwQYME6fs2NIFoSIFX5UjbMoN2iUX7mC0UqruS7BfWrOWZJdL2hGOjuI1seMR0E1qJFV6YzoiDn89eItqcTXmcF38tkwFkFqAkQ7H5ds89DFvD558Gb1qazzS8X-FBDINQ27iBfgcNWkBOkdBeb8rD79p9hi=s163") no-repeat 0 0;
-    width: 16.3rem;
-    height: 1.6rem;
-    display: inline-block;
-    vertical-align: middle;
-    margin: -0.3rem 0.2rem 0 0;
-    content: "";
+.copyright img{
+    width: 18rem;
 }
 .IconTop {
-    margin-top: -1.2%;
+    margin-top: -1.5%;
 }
 .IconTop a{
     display: inline-flex;
@@ -935,18 +960,6 @@ footer[data-v-6661]::before{
         font-size: 2.5em;
         font-weight: 600;
     }
-    .container{
-        width: 100%;
-        margin: 5rem auto;
-    }
-    .skill-head{
-        min-width: 300px;
-        margin: 1rem auto;
-    }
-    .skill-main{
-        flex-direction: column;
-        width: 100%
-    }
     .services{
         padding: 2.5rem;
         margin-top: 7rem;
@@ -978,6 +991,12 @@ footer[data-v-6661]::before{
         display: none;
     }
 }
+@media(max-width: 990px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 3.125;
+    }
+}
 @media(max-width: 769px){
     #menu-icon{
         display: block;
@@ -986,7 +1005,6 @@ footer[data-v-6661]::before{
         display: none;
         position: absolute;
         top: 100%;
-        left: 43rem;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -1037,9 +1055,6 @@ footer[data-v-6661]::before{
         width: 65vw;
         margin-top: 10rem;
     }
-    .skills{
-        margin: -3.5rem auto;
-    }
     .project{
         min-height: 0;
     }
@@ -1076,9 +1091,6 @@ footer[data-v-6661]::before{
     .bttn{
         margin-left: 0;
     }
-    .navbar{
-        left: 43rem;
-    }
     .IconTop{
         margin-top: -2rem;
         margin-bottom: 2rem;
@@ -1095,11 +1107,13 @@ footer[data-v-6661]::before{
     .header {
         padding: 0.3rem 3%;
     }
+    .header-icon{
+        width: 23rem;
+    }
     .navbar{
         display: none;
         position: absolute;
         top: 100%;
-        left: 43rem;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -1107,13 +1121,12 @@ footer[data-v-6661]::before{
     }
     .navbar.active{
         display: block;
-        margin: auto -2rem;
     }
     .navbar a{
         display: block;
         font-size: 1.5rem;
         margin: 3rem 0; 
-        animation: slideLeft .2s ease forwards;
+        animation: slideRight .1s ease forwards;
         animation-delay: calc(.2s * var(--rs));
     }
     .navbar a.bttn{
@@ -1128,10 +1141,21 @@ footer[data-v-6661]::before{
         margin-left: 0;
     }
     .home-content{
-        margin-left: 2rem;
+        margin-left: auto;
     }
     .home-content h6{
+        font-size: 1.5rem;
+        margin-left: -5rem;
+    }
+    .home-content h3{
         font-size: 1.8rem;
+        margin-left: -5rem;
+    }
+    .home-content h1{
+        margin-left: -5rem;
+    }
+    .home-content p{
+        margin-left: -5rem;
     }
     .home-img img{
         width: 90vw;
@@ -1141,6 +1165,7 @@ footer[data-v-6661]::before{
         padding: 1rem 2.5rem;
         border-radius: 3rem;
         font-size: 1.5rem;
+        margin-left: -5rem;
     }
     .btn:nth-of-type(2){
         padding: 1rem 2.5rem;
@@ -1169,28 +1194,37 @@ footer[data-v-6661]::before{
         width: 90vw;
         margin-right: -1.6rem;
     }
-    .container{
-        width: 100%;
-        margin: 5rem auto;
-    }
-    .skill-head{
-        min-width: 300px;
-        margin: auto;
-    }
-    .skills h2{
-        font-size: 3rem;
-    }
     .skills{
         padding: 2.5rem;
         margin: -3.5rem auto;
     }
-    .skill-main{
-        flex-direction: column;
+    .skill-header{
         width: 100%;
-        margin: auto;
+        text-align: center;
     }
-    .skill-bar .skill-info p{
+    .skill-header h2{
+        font-size: 3rem;
+    }
+    .skill-header p{
+        font-size: 1.5rem;
+    }
+    .skills-content{
+        width: 100%;
+        margin: 5rem auto;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .skill-box p{
         font-size: 1.4rem;
+        padding: 0 3rem;
+    }
+    .skill-title h3{
+        font-size: 2rem;
+        margin: 2rem auto auto;
+    }
+    .skills-icon{
+        width: 7.5rem;
     }
     .project h2 {
         font-size: 4.3rem;
@@ -1220,17 +1254,14 @@ footer[data-v-6661]::before{
     .footer{
         flex-direction: column-reverse;
     }
-    footer[data-v-6661]{
-        margin-top: 2rem;
+    .copyright img{
+        width: 20rem;
+    }
+    .copyright h2{
         font-size: 1.5rem;
     }
-    footer[data-v-6661]::before{
-        text-align: center;
-        padding: 5rem 0;
-        margin: 0 -9rem;
-    }
     .IconTop{
-        margin: -2rem 5rem 2rem;
+        margin: 2rem 5rem 2rem;
         text-align: center;
     }
 }
@@ -1241,11 +1272,13 @@ footer[data-v-6661]::before{
     .header {
         padding: 0.3rem 3%;
     }
+    .header-icon{
+        width: 21rem;
+    }
     .navbar{
         display: none;
         position: absolute;
         top: 100%;
-        left: 47rem;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -1253,13 +1286,12 @@ footer[data-v-6661]::before{
     }
     .navbar.active{
         display: block;
-        margin: auto -13rem;
     }
     .navbar a{
         display: block;
         font-size: 1.5rem;
         margin: 3rem 0; 
-        animation: slideLeft .2s ease forwards;
+        animation: slideRight .1s ease forwards;
         animation-delay: calc(.2s * var(--rs));
     }
     .navbar a.bttn{
@@ -1274,10 +1306,21 @@ footer[data-v-6661]::before{
         margin-left: 0;
     }
     .home-content{
-        margin-left: 9rem;
+        margin-left: auto;
     }
     .home-content h6{
         font-size: 1.5rem;
+        margin-left: -2.8rem;
+    }
+    .home-content h3{
+        font-size: 1.8rem;
+        margin-left: -2.8rem;
+    }
+    .home-content h1{
+        margin-left: -2.8rem;
+    }
+    .home-content p{
+        margin-left: -2.8rem;
     }
     .home-img img{
         width: 85vw;
@@ -1287,6 +1330,7 @@ footer[data-v-6661]::before{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.3rem;
+        margin-left: -2.8rem;
     }
     .btn:nth-of-type(2){
         padding: 0.9rem 2rem;
@@ -1319,33 +1363,33 @@ footer[data-v-6661]::before{
         padding: 2.5rem;
         margin: -3.5rem auto;
     }
-    .container{
+    .skill-header{
+        width: 100%;
+        text-align: center;
+    }
+    .skill-header h2{
+        font-size: 3rem;
+    }
+    .skill-header p{
+        font-size: 1.5rem;
+    }
+    .skills-content{
         width: 100%;
         margin: 5rem auto;
     }
-    .skills h2{
-        font-size: 2.5rem;
-        font-weight: 600;
-        margin: auto 1rem 1rem;
+    .container{
+        grid-template-columns: 1fr;
     }
-    .skill-head{
-        min-width: 300px;
-        margin: -1rem -4rem;
-    }
-    .skill-head p{
+    .skill-box p{
         font-size: 1.4rem;
+        padding: 0 1rem;
     }
-    .skill-main{
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
+    .skill-title h3{
+        font-size: 2rem;
+        margin: 1rem auto auto;
     }
-    .skill-bar .skill-info p{
-        font-size: 1.3rem;
-    }
-    .skill-bar .bar{
-        width: 100%;
-        height: 1rem;
+    .skills-icon{
+        width: 6.5rem;
     }
     .project h2 {
         font-size: 4rem;
@@ -1372,32 +1416,31 @@ footer[data-v-6661]::before{
     .footer{
         flex-direction: column-reverse;
     }
-    footer[data-v-6661]{
-        margin-top: 2rem;
+    .copyright img{
+        width: 18rem;
+    }
+    .copyright h2{
         font-size: 1.3rem;
     }
-    footer[data-v-6661]::before{
-        text-align: center;
-        padding: 5rem 0;
-        margin: 0 -8rem;
-    }
     .IconTop{
-        margin: -2rem 5rem 2rem;
+        margin: 2rem 5rem 2rem;
         text-align: center;
     }
 }
 @media(max-width: 320px){
     html{
-        font-size: 45%;
+        font-size: 43%;
     }
     .header {
         padding: 0.3rem 3%;
+    }
+    .header-icon{
+        width: 20rem;
     }
     .navbar{
         display: none;
         position: absolute;
         top: 100%;
-        left: 47rem;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -1405,13 +1448,12 @@ footer[data-v-6661]::before{
     }
     .navbar.active{
         display: block;
-        margin: auto -16rem;
     }
     .navbar a{
         display: block;
         font-size: 1.5rem;
         margin: 3rem 0; 
-        animation: slideLeft .2s ease forwards;
+        animation: slideRight .1s ease forwards;
         animation-delay: calc(.2s * var(--rs));
     }
     .navbar a.bttn{
@@ -1426,24 +1468,40 @@ footer[data-v-6661]::before{
         margin-left: 0;
     }
     .home-content{
-        margin-left: 12rem;
+        margin-left: auto;
     }
     .home-content h6{
+        margin-left: -2rem;
+        font-size: 1.3rem;
+    }
+    .home-content h3{
+        margin-left: -2rem;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+    .home-content h1{
+        margin-left: -2rem;
+        font-size: 4.7rem;
+    }
+    .home-content p{
+        margin-left: -2rem;
         font-size: 1.5rem;
     }
     .home-img img{
         width: 80vw;
         margin-right: -1.5rem;
+        margin-bottom: -3rem;
     }
     .btn:nth-of-type(1){
         padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin-left: -2rem;
     }
     .btn:nth-of-type(2){
         padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .about{
         flex-direction: column-reverse;
@@ -1452,7 +1510,12 @@ footer[data-v-6661]::before{
     .about-content{
         margin-left: -2rem;
     }
-    .about-content h2, 
+    .about-content h2{
+        animation: slideRight 1s ease forwards;
+        animation-delay: .1s;
+        font-size: 4.2rem;
+        opacity: 0;
+    }
     .about-content p{
         animation: slideRight 1s ease forwards;
         animation-delay: .1s;
@@ -1461,6 +1524,7 @@ footer[data-v-6661]::before{
     .about-content h3{
         animation: slideLeft 1s ease forwards;
         animation-delay: .1s;
+        font-size: 2.3rem;
         opacity: 0;
     }
     .about-img img{
@@ -1471,33 +1535,32 @@ footer[data-v-6661]::before{
         padding: 2.5rem;
         margin: -3.5rem auto;
     }
-    .container{
+    .skill-header{
+        width: 100%;
+        text-align: center;
+    }
+    .skill-header p{
+        font-size: 1.4rem;
+    }
+    .skill-header h2{
+        font-size: 2.7rem;
+    }
+    .skills-content{
         width: 100%;
         margin: 5rem auto;
     }
-    .skills h2{
-        font-size: 2.5rem;
-        font-weight: 600;
-        margin: auto 1rem 1rem;
+    .container{
+        grid-template-columns: 1fr;
     }
-    .skill-head p{
-        font-size: 1.4rem;
-    }
-    .skill-head{
-        min-width: 300px;
-        margin: -1rem -6.5rem;
-    }
-    .skill-main{
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-    }
-    .skill-bar .skill-info p{
+    .skill-box p{
         font-size: 1.3rem;
+        padding: 0 1rem;
     }
-    .skill-bar .bar{
-        width: 100%;
-        height: 1rem;
+    .skill-title h3{
+        font-size: 1.9rem;
+    }
+    .skills-icon{
+        width: 6rem;
     }
     .project h2 {
         font-size: 4rem;
@@ -1523,17 +1586,8 @@ footer[data-v-6661]::before{
     .footer{
         flex-direction: column-reverse;
     }
-    footer[data-v-6661]{
-        margin-top: 2rem;
-        font-size: 1.3rem;
-    }
-    footer[data-v-6661]::before{
-        text-align: center;
-        padding: 5rem 0;
-        margin: 0 -8rem;
-    }
     .IconTop{
-        margin: -2rem 5rem 2rem;
+        margin: 2rem 5rem 2rem;
         text-align: center;
     }
 }
