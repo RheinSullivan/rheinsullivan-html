@@ -107,8 +107,11 @@ section{
     justify-content: center;
     width: 100%;
     justify-content: space-between;
-    padding: 4rem 10% 4rem;
+    padding: 4rem 4.5%;
     margin-top: -5rem;
+}
+.home-content{
+    margin-left: 8.2rem;
 }
 .home-content h6{
     font-size: 1.5rem;
@@ -118,7 +121,6 @@ section{
     margin-bottom: 2.5rem;
     animation: slideLeft 1s ease forwards;
     animation-delay: .1s;
-    margin-left: 0.8rem;
 }
 .home-content h3{
     font-size: 2rem;
@@ -128,7 +130,6 @@ section{
     font-weight: 700;
     margin-top: 2.5rem;
     margin-bottom: -0.7rem;
-    margin-left: 0.8rem;
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 1rem;
@@ -138,7 +139,7 @@ section{
 .home-content h1{
     font-size: 5.6rem;
     line-height: 1;
-    margin: 0.5rem 0rem 2.8rem 0.8rem;
+    margin: 0.5rem auto 2.8rem auto;
     animation: slideRight 1s ease forwards;
     animation-delay: .1s;
     opacity: 0;
@@ -155,7 +156,6 @@ span{
     animation-delay: .1s;
     font-size: 1.6rem;
     margin-bottom: 3rem;
-    margin-left: 0.8rem;
 }
 .btn:nth-of-type(1){
     border: -0rem solid var(--main-color);
@@ -170,7 +170,6 @@ span{
     opacity: 0;
     margin-left: 0rem;
     margin-top: 0.5rem;
-    margin-left: 0.8rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
 }
@@ -209,23 +208,26 @@ span{
 .home-img img{
     width: 40rem;
     margin-bottom: -7rem;
-    margin-right: -2rem;
+    margin-right: -3rem;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
     opacity: 0;
 }
 /* Social Media */
+.social-media{
+    margin-left: -1rem;
+}
 .social-media a{
     display: inline-flex;
     color: var(--main-color);
     width: 4rem;
     height: 4rem;
-    padding: 0.9rem 2.5rem;
+    padding: 0.9rem 0;
     background: transparent;
     text-decoration: none;
     justify-content: right;
     align-items: center;
-    margin: 8rem -2rem 9rem 0.3rem;
+    margin: 8rem -0.3rem 9rem;
     font-size: 2rem;
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
@@ -1102,13 +1104,13 @@ span{
 @media(max-width: 481px){}
 @media(max-width: 480px){
     html{
-        font-size: 48%;
+        font-size: 57%;
     }
     .header {
         padding: 0.3rem 3%;
     }
     .header-icon{
-        width: 23rem;
+        width: 21.5rem;
     }
     .navbar{
         display: none;
@@ -1142,42 +1144,31 @@ span{
     }
     .home-content{
         margin-left: auto;
-    }
-    .home-content h6{
-        font-size: 1.5rem;
-        margin-left: -5rem;
-    }
-    .home-content h3{
-        font-size: 1.8rem;
-        margin-left: -5rem;
-    }
-    .home-content h1{
-        margin-left: -5rem;
-    }
-    .home-content p{
-        margin-left: -5rem;
+        margim-right: auto;
     }
     .home-img img{
-        width: 90vw;
-        margin-right: -1.6rem;
+        width: 95vw;
+        margin-right: -1.5rem;
+        margin-bottom: -3rem;
     }
     .btn:nth-of-type(1){
-        padding: 1rem 2.5rem;
+        padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.5rem;
-        margin-left: -5rem;
     }
     .btn:nth-of-type(2){
-        padding: 1rem 2.5rem;
+        padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.5rem;
+    }
+    .social-media{
+        margin-left: -1.7rem;
     }
     .about{
         flex-direction: column-reverse;
         padding: 1rem 10%;
     }
     .about-content{
-        margin-top: 5rem;
+        margin-left: -2.9rem;
+        margin-top: 1rem;
     }
     .about-content h2, 
     .about-content p{
@@ -1191,8 +1182,8 @@ span{
         opacity: 0;
     }
     .about-img img{
-        width: 90vw;
-        margin-right: -1.6rem;
+        width: 95vw;
+        margin-right: -1.5rem;
     }
     .skills{
         padding: 2.5rem;
@@ -1202,12 +1193,6 @@ span{
         width: 100%;
         text-align: center;
     }
-    .skill-header h2{
-        font-size: 3rem;
-    }
-    .skill-header p{
-        font-size: 1.5rem;
-    }
     .skills-content{
         width: 100%;
         margin: 5rem auto;
@@ -1215,59 +1200,35 @@ span{
     .container{
         grid-template-columns: 1fr;
     }
-    .skill-box p{
-        font-size: 1.4rem;
-        padding: 0 3rem;
-    }
     .skill-title h3{
-        font-size: 2rem;
-        margin: 2rem auto auto;
-    }
-    .skills-icon{
-        width: 7.5rem;
-    }
-    .project h2 {
-        font-size: 4.3rem;
-    }
-    .project p{
-        font-size: 1.6rem;
+        font-size: 2.2rem;
+        margin: 1rem auto auto;
     }
     .project-layer p{
-        font-size: 1.5rem;
         font-weight: 500;
-    }
-    .services h1{
-        font-size: 4.3rem;
+        font-size: 1.4rem;
     }
     .services p{
-        font-size: 1.6rem;
-        padding: 0 8rem;
+        padding: 0 5rem;
     }
     .service-card p{
-        font-size: 1.3rem;
         font-weight: 500;
-        padding: 0 3rem;
-    }
-    .contact fromBx .inputbox input{
-        width: 100%;
+        padding: 0 2rem;
     }
     .footer{
         flex-direction: column-reverse;
     }
     .copyright img{
-        width: 20rem;
-    }
-    .copyright h2{
-        font-size: 1.5rem;
+        width: 18rem;
     }
     .IconTop{
         margin: 2rem 5rem 2rem;
         text-align: center;
     }
 }
-@media(max-width: 375px){
+@media(max-width: 420px){
     html{
-        font-size: 47%;
+        font-size: 52%;
     }
     .header {
         padding: 0.3rem 3%;
@@ -1307,45 +1268,31 @@ span{
     }
     .home-content{
         margin-left: auto;
-    }
-    .home-content h6{
-        font-size: 1.5rem;
-        margin-left: -2.8rem;
-    }
-    .home-content h3{
-        font-size: 1.8rem;
-        margin-left: -2.8rem;
-    }
-    .home-content h1{
-        margin-left: -2.8rem;
-    }
-    .home-content p{
-        margin-left: -2.8rem;
+        margim-right: auto;
     }
     .home-img img{
-        width: 85vw;
+        width: 90vw;
         margin-right: -1.5rem;
+        margin-bottom: -3rem;
     }
     .btn:nth-of-type(1){
         padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.3rem;
-        margin-left: -2.8rem;
     }
     .btn:nth-of-type(2){
         padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.3rem;
+    }
+    .social-media{
+        margin-left: -1.7rem;
     }
     .about{
         flex-direction: column-reverse;
         padding: 1rem 10%;
     }
-    .social-media{
-        margin-left: -3rem;
-    }
     .about-content{
-        margin-left: -2.2rem;
+        margin-left: -2.9rem;
+        margin-top: 1rem;
     }
     .about-content h2, 
     .about-content p{
@@ -1359,7 +1306,7 @@ span{
         opacity: 0;
     }
     .about-img img{
-        width: 85vw;
+        width: 90vw;
         margin-right: -1.5rem;
     }
     .skills{
@@ -1370,12 +1317,6 @@ span{
         width: 100%;
         text-align: center;
     }
-    .skill-header h2{
-        font-size: 3rem;
-    }
-    .skill-header p{
-        font-size: 1.5rem;
-    }
     .skills-content{
         width: 100%;
         margin: 5rem auto;
@@ -1383,36 +1324,18 @@ span{
     .container{
         grid-template-columns: 1fr;
     }
-    .skill-box p{
-        font-size: 1.4rem;
-        padding: 0 1rem;
-    }
     .skill-title h3{
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin: 1rem auto auto;
     }
-    .skills-icon{
-        width: 6.5rem;
-    }
-    .project h2 {
-        font-size: 4rem;
-    }
-    .project p{
-        font-size: 1.3rem;
-    }
     .project-layer p{
-        font-size: 1.1rem;
         font-weight: 500;
-    }
-    .services h1{
-        font-size: 4rem;
+        font-size: 1.4rem;
     }
     .services p{
-        font-size: 1.3rem;
         padding: 0 5rem;
     }
     .service-card p{
-        font-size: 1.3rem;
         font-weight: 500;
         padding: 0 2rem;
     }
@@ -1422,23 +1345,20 @@ span{
     .copyright img{
         width: 18rem;
     }
-    .copyright h2{
-        font-size: 1.3rem;
-    }
     .IconTop{
         margin: 2rem 5rem 2rem;
         text-align: center;
     }
 }
-@media(max-width: 360px){
+@media(max-width: 380px){
     html{
-        font-size: 47%;
+        font-size: 45%;
     }
     .header {
         padding: 0.3rem 3%;
     }
     .header-icon{
-        width: 21rem;
+        width: 20.5rem;
     }
     .navbar{
         display: none;
@@ -1472,45 +1392,31 @@ span{
     }
     .home-content{
         margin-left: auto;
-    }
-    .home-content h6{
-        font-size: 1.5rem;
-        margin-left: -2.8rem;
-    }
-    .home-content h3{
-        font-size: 1.8rem;
-        margin-left: -2.8rem;
-    }
-    .home-content h1{
-        margin-left: -2.8rem;
-    }
-    .home-content p{
-        margin-left: -2.8rem;
+        margim-right: auto;
     }
     .home-img img{
         width: 85vw;
         margin-right: -1.5rem;
+        margin-bottom: -3rem;
     }
     .btn:nth-of-type(1){
         padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.3rem;
-        margin-left: -2.8rem;
     }
     .btn:nth-of-type(2){
         padding: 0.9rem 2rem;
         border-radius: 3rem;
-        font-size: 1.3rem;
     }
     .social-media{
-        margin-left: -3rem;
+        margin-left: -1.7rem;
     }
     .about{
         flex-direction: column-reverse;
         padding: 1rem 10%;
     }
     .about-content{
-        margin-left: -2.2rem;
+        margin-left: -2.9rem;
+        margin-top: 1rem;
     }
     .about-content h2, 
     .about-content p{
@@ -1535,12 +1441,6 @@ span{
         width: 100%;
         text-align: center;
     }
-    .skill-header h2{
-        font-size: 3rem;
-    }
-    .skill-header p{
-        font-size: 1.5rem;
-    }
     .skills-content{
         width: 100%;
         margin: 5rem auto;
@@ -1548,36 +1448,18 @@ span{
     .container{
         grid-template-columns: 1fr;
     }
-    .skill-box p{
-        font-size: 1.4rem;
-        padding: 0 1rem;
-    }
     .skill-title h3{
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin: 1rem auto auto;
     }
-    .skills-icon{
-        width: 6.5rem;
-    }
-    .project h2 {
-        font-size: 4rem;
-    }
-    .project p{
-        font-size: 1.3rem;
-    }
     .project-layer p{
-        font-size: 1.1rem;
         font-weight: 500;
-    }
-    .services h1{
-        font-size: 4rem;
+        font-size: 1.3rem;
     }
     .services p{
-        font-size: 1.3rem;
         padding: 0 5rem;
     }
     .service-card p{
-        font-size: 1.3rem;
         font-weight: 500;
         padding: 0 2rem;
     }
@@ -1586,9 +1468,6 @@ span{
     }
     .copyright img{
         width: 18rem;
-    }
-    .copyright h2{
-        font-size: 1.3rem;
     }
     .IconTop{
         margin: 2rem 5rem 2rem;
@@ -1637,23 +1516,7 @@ span{
     }
     .home-content{
         margin-left: auto;
-    }
-    .home-content h6{
-        margin-left: -2.5rem;
-        font-size: 1.3rem;
-    }
-    .home-content h3{
-        margin-left: -2.5rem;
-        font-size: 1.7rem;
-        font-weight: 400;
-    }
-    .home-content h1{
-        margin-left: -2.5rem;
-        font-size: 4.7rem;
-    }
-    .home-content p{
-        margin-left: -2.5rem;
-        font-size: 1.5rem;
+        margim-right: auto;
     }
     .home-img img{
         width: 80vw;
@@ -1664,24 +1527,26 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.2rem;
-        margin-left: -2.5rem;
     }
     .btn:nth-of-type(2){
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.2rem;
     }
+    .social-media{
+        margin-left: -1.7rem;
+    }
     .about{
         flex-direction: column-reverse;
         padding: 1rem 10%;
     }
     .about-content{
-        margin-left: -2rem;
+        margin-left: -2.3rem;
+        margin-top: 1rem;
     }
     .about-content h2{
         animation: slideRight 1s ease forwards;
         animation-delay: .1s;
-        font-size: 4.2rem;
         opacity: 0;
     }
     .about-content p{
@@ -1707,12 +1572,6 @@ span{
         width: 100%;
         text-align: center;
     }
-    .skill-header p{
-        font-size: 1.4rem;
-    }
-    .skill-header h2{
-        font-size: 2.7rem;
-    }
     .skills-content{
         width: 100%;
         margin: 5rem auto;
@@ -1720,39 +1579,24 @@ span{
     .container{
         grid-template-columns: 1fr;
     }
-    .skill-box p{
-        font-size: 1.3rem;
-        padding: 0 1rem;
-    }
-    .skill-title h3{
-        font-size: 1.9rem;
-    }
-    .skills-icon{
-        width: 6rem;
-    }
-    .project h2 {
-        font-size: 4rem;
-    }
-    .project p{
-        font-size: 1.3rem;
-    }
     .project-layer p{
-        font-size: 1.1rem;
         font-weight: 500;
+        font-size: 1.2rem;
     }
     .services h1{
         font-size: 4rem;
     }
     .services p{
-        font-size: 1.3rem;
         padding: 0 3rem;
     }
     .service-card p{
-        font-size: 1.3rem;
         font-weight: 500;
     }
     .footer{
         flex-direction: column-reverse;
+    }
+    .copyright img{
+        width: 16rem;
     }
     .IconTop{
         margin: 2rem 5rem 2rem;
