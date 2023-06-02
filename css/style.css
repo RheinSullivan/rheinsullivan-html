@@ -215,6 +215,7 @@ span{
 }
 /* Social Media */
 .social-media{
+    margin-left: -3.5rem;
     padding: 4rem 4.5%;
 }
 .social-media a{
