@@ -1160,7 +1160,7 @@ span{
         border-radius: 3rem;
     }
     .social-media{
-        margin-left: rem;
+        margin-left: -1rem;
     }
     .about{
         flex-direction: column-reverse;
@@ -1226,11 +1226,6 @@ span{
         text-align: center;
     }
 }
-@media(max-width: 450px){
-    .social-media{
-        margin-left: -1rem;
-    }
-}
 @media(max-width: 320px){
     html{
         font-size: 43%;
@@ -1291,7 +1286,7 @@ span{
         font-size: 1.2rem;
     }
     .social-media{
-        margin-left: rem;
+        margin-left: -1rem;
     }
     .about{
         flex-direction: column-reverse;
