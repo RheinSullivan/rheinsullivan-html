@@ -215,8 +215,7 @@ span{
 }
 /* Social Media */
 .social-media{
-    margin-left: -3.5rem;
-    padding: 1rem 4.5%;
+    margin-right: 11rem;
 }
 .social-media a{
     display: inline-flex;
@@ -1225,6 +1224,11 @@ span{
     .IconTop{
         margin: 2rem 5rem 2rem;
         text-align: center;
+    }
+}
+@media(max-width: 450px){
+    .social-media{
+        margin-left: 4rem;
     }
 }
 @media(max-width: 320px){
