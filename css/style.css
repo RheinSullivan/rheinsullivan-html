@@ -1161,7 +1161,7 @@ span{
         border-radius: 3rem;
     }
     .social-media{
-        margin-left: auto;
+        margin-left: rem;
     }
     .about{
         flex-direction: column-reverse;
@@ -1287,7 +1287,7 @@ span{
         font-size: 1.2rem;
     }
     .social-media{
-        margin-left: auto;
+        margin-left: rem;
     }
     .about{
         flex-direction: column-reverse;
