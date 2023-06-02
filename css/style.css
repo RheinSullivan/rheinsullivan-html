@@ -1228,7 +1228,7 @@ span{
 }
 @media(max-width: 450px){
     .social-media{
-        margin-left: 4rem;
+        margin-left: -1rem;
     }
 }
 @media(max-width: 320px){
