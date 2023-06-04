@@ -215,25 +215,24 @@ span{
 }
 /* Social Media */
 .social-media{
-    margin-right: 11rem;
+    margin-left: -2.1rem;
 }
-.social-media a{
+.social-media-icons a{
     display: inline-flex;
     color: var(--main-color);
     width: 4rem;
     height: 4rem;
-    padding: 0.9rem 0;
     background: transparent;
     text-decoration: none;
     justify-content: right;
     align-items: center;
-    margin: 8rem -0.3rem 9rem;
+    margin: 8rem -0.3rem 9rem 0;
     font-size: 2rem;
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
     opacity: 0;
 }
-.home .social-media a:hover{
+.home .social-media-icons a:hover{
     transform: scale(1.2);
     transition: .4s;
     color: var(--text-color);
@@ -1073,7 +1072,7 @@ span{
     .bttn{
         margin-left: 0;
     }
-    .social-media a{
+    .social-media-icons a{
         animation: slideBottom 0.2s ease forwards;
         animation-delay: calc(.2s * var(--rs));
         opacity: 0;
@@ -1159,7 +1158,7 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
     }
-    .social-media{
+    .social-media-icons{
         margin-left: -1rem;
     }
     .about{
@@ -1285,7 +1284,7 @@ span{
         border-radius: 3rem;
         font-size: 1.2rem;
     }
-    .social-media{
+    .social-media-icons{
         margin-left: -1rem;
     }
     .about{
