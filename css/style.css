@@ -1103,6 +1103,16 @@ span{
         margin-bottom: 5rem;
         margin-right: 3rem;
     }
+    .social-media{
+        margin-left: auto;
+    }
+    .social-media-icons{
+        font-size: 1.6rem;
+        margin-left: -2rem;
+    }
+    .social-media-icons a{
+        padding-right: 0;
+    }
     .about{
         flex-direction: column-reverse;
     }
