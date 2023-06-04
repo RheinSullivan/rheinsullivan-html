@@ -214,9 +214,6 @@ span{
     opacity: 0;
 }
 /* Social Media */
-.social-media{
-    margin-left: -2rem;
-}
 .social-media-icons a{
     display: inline-flex;
     color: var(--main-color);
@@ -231,6 +228,7 @@ span{
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
     opacity: 0;
+    padding-right: 2rem:
 }
 .home .social-media-icons a:hover{
     transform: scale(1.2);
@@ -1218,7 +1216,7 @@ span{
         border-radius: 3rem;
     }
     .social-media{
-        margin-left: -2.3rem;
+        margin-left: auto;
     }
     .social-media-icons{
         font-size: 1.6rem;
@@ -1351,6 +1349,9 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.2rem;
+    }
+    .social-media{
+        margin: auto;
     }
     .social-media-icons{
         font-size: 1.6rem;
