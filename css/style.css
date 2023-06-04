@@ -230,7 +230,7 @@ span{
     opacity: 0;
     padding-right: 2rem:
 }
-.home .social-media-icons a:hover{
+.social-media-icons a:hover{
     transform: scale(1.2);
     transition: .4s;
     color: var(--text-color);
@@ -1220,6 +1220,10 @@ span{
     }
     .social-media-icons{
         font-size: 1.6rem;
+        margin-left: -2rem;
+    }
+    .social-media-icons a{
+        padding-right: 0;
     }
     .about{
         flex-direction: column-reverse;
@@ -1355,6 +1359,10 @@ span{
     }
     .social-media-icons{
         font-size: 1.6rem;
+        margin-left: -2rem;
+    }
+    .social-media-icons a{
+        padding-right: 0;
     }
     .about{
         flex-direction: column-reverse;
