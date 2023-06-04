@@ -1218,10 +1218,10 @@ span{
         border-radius: 3rem;
     }
     .social-media{
-        margin-left: -2rem;
+        margin-left: -2.3rem;
     }
     .social-media-icons a {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         margin: 8rem -1rem 8rem 0;
     }
     .about{
@@ -1354,8 +1354,8 @@ span{
         font-size: 1.2rem;
     }
     .social-media-icons a {
-        font-size: 1.8rem;
-        margin: 8rem -1rem 9rem 0;
+        font-size: 1.7rem;
+        margin: 8rem -1rem 8rem 0;
     }
     .about{
         flex-direction: column-reverse;
