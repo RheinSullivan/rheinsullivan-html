@@ -775,6 +775,65 @@ span{
     animation-delay: calc(.3s * var(--rs));
     opacity: 0;
 }
+/* Portfolio */
+.portfolio{
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 22rem;
+}
+.portfolio-box-1 h1{
+    padding: 4rem 0 0 0;
+    color: var(--main-color);
+    font-size: 5rem;
+    font-weight: 1000;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .1s;
+    opacity: 0;
+}
+.portfolio-box-2 img{
+    width: 30rem;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 2s, 3s;
+    opacity: 0;
+}
+.portfolio-box-3 h3{
+    font-size: 2rem;
+    font-weight: 1000;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .1s;
+    opacity: 0;
+}
+.portfolio-box-3 p{
+    font-size: 2.5rem;
+    line-height: 2rem;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .1s;
+    opacity: 0;
+}
+.portfolio-box-3 a{
+    border: -0rem solid var(--main-color);
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background: var(--main-color);
+    animation: zoomIn 1s ease forwards;
+    animation-delay: calc(.3s * var(--rs));
+    opacity: 0;
+    margin-left: 0rem;
+    margin-top: 3.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+.portfolio-box-3 a:hover{
+    border: 0.1rem solid var(--text-color);
+    color: var(--main-color);
+    transition: .4s;
+    background: var(--text-color);
+    text-decoration: none;
+    box-shadow: 0 0 1rem var(--gray-color);
+}
 /* Copyright */
 .copyright{
     margin: 2rem auto;
@@ -1215,6 +1274,12 @@ span{
         font-weight: 500;
         padding: 0 2rem;
     }
+    .portfolio h1{
+        font-size: 5rem;
+    }
+    .portfolio-box-2 img{
+        width: 80vw;
+    }
     .footer{
         flex-direction: column-reverse;
     }
@@ -1344,6 +1409,12 @@ span{
     }
     .service-card p{
         font-weight: 500;
+    }
+    .portfolio h1{
+        font-size: 3.5rem;
+    }
+    .portfolio-box-2 img{
+        width: 70vw;
     }
     .footer{
         flex-direction: column-reverse;
