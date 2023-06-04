@@ -1158,8 +1158,12 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
     }
-    .social-media-icons{
-        margin-left: -1rem;
+    .social-media{
+        padding: 0;
+    }
+    .social-media-icons a{
+        margin-left: auto;
+        margim-right: auto;
     }
     .about{
         flex-direction: column-reverse;
@@ -1284,8 +1288,12 @@ span{
         border-radius: 3rem;
         font-size: 1.2rem;
     }
-    .social-media-icons{
-        margin-left: -1rem;
+    .social-media{
+        padding: 0;
+    }
+    .social-media-icons a{
+        margin-left: auto;
+        margim-right: auto;
     }
     .about{
         flex-direction: column-reverse;
