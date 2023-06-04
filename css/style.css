@@ -398,7 +398,6 @@ span{
 .skill-box p{
     font-weight: 500;
     font-size: 1.1rem;
-    padding: 0 3rem;
     text-align: center;
 }
 .skill-box:hover > .skill-title:after,
@@ -1219,7 +1218,7 @@ span{
         border-radius: 3rem;
     }
     .social-media a{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         margin: auto -0.3rem;
     }
     .about{
