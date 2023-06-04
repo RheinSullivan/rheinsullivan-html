@@ -1220,7 +1220,7 @@ span{
     .social-media{
         margin-left: -2.3rem;
     }
-    .social-media-icons a {
+    .social-media-icons{
         font-size: 1.7rem;
         margin: 8rem -1rem 7rem 0;
     }
@@ -1353,7 +1353,7 @@ span{
         border-radius: 3rem;
         font-size: 1.2rem;
     }
-    .social-media-icons a {
+    .social-media-icons{
         font-size: 1.7rem;
         margin: 8rem -1rem 9rem 0;
     }
