@@ -214,9 +214,7 @@ span{
     opacity: 0;
 }
 /* Social Media */
-.social-media{
-    margin-left: -2rem;
-}
+
 .social-media-icons a{
     display: inline-flex;
     color: var(--main-color);
@@ -226,7 +224,7 @@ span{
     text-decoration: none;
     justify-content: right;
     align-items: center;
-    margin: 8rem -0.5rem 8rem 0;
+    margin: 10rem -0.5rem 2rem 0;
     font-size: 2rem;
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
