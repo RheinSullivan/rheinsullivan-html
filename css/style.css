@@ -214,6 +214,9 @@ span{
     opacity: 0;
 }
 /* Social Media */
+.social-media-icons{
+    margin-left: -2rem;
+}
 .social-media-icons a{
     display: inline-flex;
     color: var(--main-color);
@@ -228,7 +231,6 @@ span{
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
     opacity: 0;
-    padding-right: 2rem:
 }
 .social-media-icons a:hover{
     transform: scale(1.2);
