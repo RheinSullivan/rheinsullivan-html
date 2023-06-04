@@ -226,7 +226,7 @@ span{
     text-decoration: none;
     justify-content: right;
     align-items: center;
-    margin: 8rem -0.3rem 9rem 0;
+    margin: 8rem -0.5rem 9rem 0;
     font-size: 2rem;
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
