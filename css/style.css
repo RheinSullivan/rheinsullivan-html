@@ -226,7 +226,7 @@ span{
     text-decoration: none;
     justify-content: right;
     align-items: center;
-    margin: 8rem -0.5rem 9rem 0;
+    margin: 8rem -0.5rem 8rem 0;
     font-size: 2rem;
     animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--rs));
@@ -1222,7 +1222,7 @@ span{
     }
     .social-media-icons a {
         font-size: 1.7rem;
-        margin: 8rem -1rem 9rem 0;
+        margin: 8rem -1rem 7rem 0;
     }
     .about{
         flex-direction: column-reverse;
