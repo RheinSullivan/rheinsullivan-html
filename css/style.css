@@ -215,7 +215,7 @@ span{
 }
 /* Social Media */
 .social-media{
-    margin-left: -1rem;
+    margin-left: -2rem;
 }
 .social-media-icons a{
     display: inline-flex;
@@ -1217,9 +1217,12 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
     }
+    .social-media{
+        margin-left: -2.5rem;
+    }
     .social-media-icons a {
         font-size: 1.8rem;
-        margin: 8rem -0.8rem 9rem 0;
+        margin: 8rem -1rem 8rem 0;
     }
     .about{
         flex-direction: column-reverse;
