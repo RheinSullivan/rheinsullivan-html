@@ -1159,11 +1159,8 @@ span{
         border-radius: 3rem;
     }
     .social-media{
+        margin: 0 2rem 0 -2rem;
         padding: 0;
-    }
-    .social-media-icons a{
-        margin-left: auto;
-        margim-right: auto;
     }
     .about{
         flex-direction: column-reverse;
@@ -1289,11 +1286,8 @@ span{
         font-size: 1.2rem;
     }
     .social-media{
+        margin: 0 2rem 0 -2rem;
         padding: 0;
-    }
-    .social-media-icons a{
-        margin-left: auto;
-        margim-right: auto;
     }
     .about{
         flex-direction: column-reverse;
