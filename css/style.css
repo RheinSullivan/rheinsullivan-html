@@ -1355,7 +1355,7 @@ span{
     }
     .social-media-icons{
         font-size: 1.6rem;
-        margin: 0 9rem 0;
+        margin: 0 0 7rem 0;
     }
     .about{
         flex-direction: column-reverse;
