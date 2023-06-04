@@ -1158,6 +1158,9 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
     }
+    .social-media{
+        margin-left: auto;
+    }
     .about{
         flex-direction: column-reverse;
         padding: 1rem 10%;
@@ -1280,6 +1283,9 @@ span{
         padding: 0.9rem 2rem;
         border-radius: 3rem;
         font-size: 1.2rem;
+    }
+    .social-media{
+        margin-left: auto;
     }
     .about{
         flex-direction: column-reverse;
