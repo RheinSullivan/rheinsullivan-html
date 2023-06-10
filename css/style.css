@@ -5,7 +5,7 @@
     border: none;
     margin: 0;
     padding: 0;
-    font-family: 'Labrada', serif;
+    font-family: 'Crimson Pro', serif;
     scroll-behavior: smooth;
 }
 :root{
@@ -62,7 +62,7 @@ section{
     animation: slideRight 2s ease forwards;
 }
 .navbar a{
-    margin-left: 3rem;
+    margin-left: 3.4rem;
     font-size: 1.3rem;
     color: var(--text-color);
     opacity: 0;
@@ -258,8 +258,8 @@ span{
     font-size: 4.5rem;
 }
 .about-content{
-    margin-left: 4rem;
-    margin-top: -2rem;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
 }
 .about-content h2{
     font-size: 4.5rem;
@@ -372,7 +372,7 @@ span{
     padding: 6rem;
     border-radius: 5rem;
     box-shadow: 0.1rem 0rem 4rem var(--main-color);
-    margin-top: -3rem;
+    margin-bottom: 8rem;
     width: 100rem;
 }
 .container{
@@ -395,6 +395,7 @@ span{
     font-weight: 500;
     font-size: 1.1rem;
     text-align: center;
+    padding: 0rem 5rem;
 }
 .skill-box:hover > .skill-title:after,
 .skill-box:hover > .skill-title:before{
@@ -554,7 +555,7 @@ span{
 /* Services */
 .services{
     display: flex;
-    font-family: 'Labrada', serif;
+    font-family: 'Crimson Pro', serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -1217,8 +1218,7 @@ span{
         padding: 1rem 10%;
     }
     .about-content{
-        margin-left: -2.9rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .about-content h2, 
     .about-content p{
@@ -1346,7 +1346,7 @@ span{
     }
     .about-content{
         margin-left: -2.9rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .about-content h2, 
     .about-content p{
@@ -1475,7 +1475,7 @@ span{
     }
     .about-content{
         margin-left: -2.3rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .about-content h2{
         animation: slideRight 1s ease forwards;
